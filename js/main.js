@@ -1,8 +1,17 @@
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
 
 // Initialize endpoint
 function start() {
        // First, grab the SAT token from the server
-    var token = "";
+//    var token = "";
+    
+    var token=getParameterByName('token');
+    console.log(token);
     // Create the endpoint, and then initialize the main calling app
     var endpoint = new Twilio.Endpoint(token);
 
