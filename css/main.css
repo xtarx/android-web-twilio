@@ -1,0 +1,11 @@
+html,body,.container {
+	height: 100%;
+}
+
+.parent-element {
+	height: 100%;
+	display: flex;
+	resize: vertical;
+	flex-direction: column;
+	justify-content: center;
+}

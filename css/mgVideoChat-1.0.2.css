@@ -1,0 +1,26 @@
+/*
+#callPanel{
+    display: none;
+}
+*/
+
+#videoPanel{
+    position: relative;
+    width: 100%;
+}
+
+#me{
+    width: 100%;
+    /*background-image: url("images/loading.gif");*/
+    /*background-repeat: no-repeat;*/
+    background-position: center;
+}
+
+#you{
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    bottom: 5%;
+    border: 1px solid white;
+}
