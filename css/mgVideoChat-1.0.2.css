@@ -5,17 +5,17 @@
 
 #me{
     position: absolute;
-    text-align: center;
-    bottom: 0;
+    text-align: left;
+    top: 0;
     width: 100%;
 }
 
 #me video{
     display: inline-block;
-    width: 20%;
+    width: 30%;
     z-index: 1;
-    right: 5%;
-    bottom: 5%;
+    /*right: 5%;*/
+    /*bottom: 5%;*/
     border: 1px solid white;
 }
 
@@ -27,9 +27,9 @@
 
 /*portrait mobile*/
 @media(max-width: 480px){
-    
+
     #me{
-        position: relative;        
+        /*position: relative;        */
     }
 
     
