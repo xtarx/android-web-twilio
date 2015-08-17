@@ -1,4 +1,8 @@
-html,body,.container {
+body {
+	background-color: black;
+}
+
+html,body,.container-fluid {
 	height: 100%;
 }
 
@@ -9,3 +13,4 @@ html,body,.container {
 	flex-direction: column;
 	justify-content: center;
 }
+

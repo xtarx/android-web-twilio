@@ -1,15 +1,12 @@
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
+    results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
 // Initialize endpoint
-function start() {
-       // First, grab the SAT token from the server
-   // var token = "eyJhbGciOiAiSFMyNTYiLCAiY3R5IjogInR3aWxpby1zYXQ7dj0xIiwgInR5cCI6ICJKV1QifQ.eyJuYmYiOiAxNDM5ODA4ODQ4LCAiaXNzIjogIlNLNmQxMTVhZjNhNjg0NGIzNDdhY2E5ODI3MmViZDAwOWIiLCAiZ3JhbnRzIjogW3sicmVzIjogInNpcDpxQEFDNzZjM2Q1ZDI0MDgyZTczZDQxOWYxMzg0YzQ5YjY1NjQuZW5kcG9pbnQudHdpbGlvLmNvbSIsICJhY3QiOiBbImxpc3RlbiIsICJpbnZpdGUiXX0sIHsicmVzIjogImh0dHBzOi8vYXBpLnR3aWxpby5jb20vMjAxMC0wNC0wMS9BY2NvdW50cy9BQzc2YzNkNWQyNDA4MmU3M2Q0MTlmMTM4NGM0OWI2NTY0L1Rva2Vucy5qc29uIiwgImFjdCI6IFsiUE9TVCJdfV0sICJleHAiOiAxNDM5ODEyNDQ4LCAianRpIjogIlNLNmQxMTVhZjNhNjg0NGIzNDdhY2E5ODI3MmViZDAwOWItMTQzOTgwODg0OCIsICJzdWIiOiAiQUM3NmMzZDVkMjQwODJlNzNkNDE5ZjEzODRjNDliNjU2NCJ9.vSL2fqjmYP8Q6QmFLNqM26p19hKESTy3aenIs0hH2qQ";
-    
+function start() {    
     // var token=getParameterByName('token');
     var token = Android.getToken();
     alert('Android.getToken '+token);

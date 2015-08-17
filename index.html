@@ -2,45 +2,28 @@
 <html>
 
 <head>
-    <title>Android Twilio Video</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/mgVideoChat-1.0.2.css">
-
+  <title>Android Twilio Video</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">  
+  <link rel="stylesheet" href="css/mgVideoChat-1.0.2.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <div class="container">
-
-        <!--NEW mongo-->
-        <div class="parent-element">
-            <div id="callPanel" class="panel panel-default">                
-                <div class="panel-body">
-                    <div id="videoPanel">
-                  <!-- 
-                  <video id="you" muted loop autoplay="autoplay">
-                    <source src="video/you.mp4" type="video/mp4">
-                    </video>
-
-                    <video id="me" muted loop autoplay="autoplay" muted="true">
-                        <source src="video/you.mp4" type="video/mp4">
-                        </video>
-                    -->                        
-                    <div id="you"></div> 
-                    <div id="me"></div>
-
-                  <!-- RealWorld --><!-- 
-                  <div id="me"><audio src="blob:http%3A//localhost/fd721aaf-c6bf-4924-a002-ec030e0a9288"></audio><video src="video/you.mp4"></video></div>
-
-                  <div id="you"><audio src="blob:http%3A//localhost/619e1e0a-036f-4b43-a18d-4f5cd3d585e6"></audio><video src="video/you.mp4"></video></div>  -->
-                  <!-- RealWorld -->
-
-              </div>
-          </div>
+  <div class="container-fluid">
+    <div class="row parent-element">
+      <div id="callPanel" >                
+        <div id="videoPanel">        
+          <div id="you"><video src="video/you.mp4"></video></div> 
+          <div id="me"><video src="video/you.mp4"></video></div>
+        </div>
       </div>
+
+    </div>
+
+
   </div>
-  <!--NEW mongo-->
+
 
 
   <!-- Release the JavaScripts -->

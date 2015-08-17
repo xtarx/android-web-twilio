@@ -1,19 +1,6 @@
-/*
-#callPanel{
-    display: none;
-}
-*/
-
 #videoPanel{
     position: relative;
     width: 100%;
-}
-
-#you video{
-    width: 100%;
-    /*background-image: url("images/loading.gif");*/
-    /*background-repeat: no-repeat;*/
-    background-position: center;
 }
 
 #me{
@@ -22,12 +9,29 @@
     bottom: 0;
     width: 100%;
 }
+
 #me video{
     display: inline-block;
     width: 20%;
-    /*position: absolute;*/
     z-index: 1;
     right: 5%;
     bottom: 5%;
     border: 1px solid white;
+}
+
+#you video{
+    width: 100%;
+    background-position: center;
+}
+
+
+/*portrait mobile*/
+@media(max-width: 480px){
+    
+    #me{
+        position: relative;        
+    }
+
+    
+    
 }
