@@ -4,7 +4,7 @@
 }
 
 #me{
-    position: absolute;
+    position: fixed;
     text-align: left;
     top: 0;
     width: 100%;
@@ -24,12 +24,11 @@
     background-position: center;
 }
 
-
 /*portrait mobile*/
 @media(max-width: 480px){
 
     #me{
-        /*position: relative;        */
+        position: absolute;        
     }
 
     
